@@ -24,7 +24,7 @@ export default function Hero() {
           pixelSize={screenSize.lessThan("md") ? 48 : 80}
           fadeDuration={800}
           delay={0}
-          pixelClassName="rounded-full bg-[#ffa04f]"
+          pixelClassName="rounded-full bg-[#0931A7]"
         />
       </div>
 

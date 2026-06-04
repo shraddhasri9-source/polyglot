@@ -14,7 +14,7 @@ const PixelTrailDemo: React.FC = () => {
           pixelSize={screenSize.lessThan("md") ? 48 : 80}
           fadeDuration={0}
           delay={1200}
-          pixelClassName="rounded-full bg-[#ffa04f]"
+          pixelClassName="rounded-full bg-[#0931A7]"
         />
       </div>
 
