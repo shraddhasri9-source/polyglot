@@ -143,7 +143,7 @@ export default function StatsSection() {
 
   return (
     <section className="relative z-10 -mt-10 w-full md:-mt-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         {/* Stats Bar Container */}
         <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
           <div className="grid grid-cols-1 divide-y divide-neutral-200 md:grid-cols-4 md:divide-y-0 md:divide-x">
