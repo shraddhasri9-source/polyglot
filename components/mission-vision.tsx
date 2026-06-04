@@ -27,9 +27,7 @@ export default function MissionVisionSection() {
               </div>
               
               <p className="text-sm font-medium leading-relaxed text-neutral-600">
-                To democratize language learning by delivering rigorous, immersive, and
-                interactive training that bridges cultural gaps, enhances global career
-                prospects, and fosters authentic human connections.
+                To provide simple, effective, and purpose-based language training that helps every learner speak confidently, grow professionally, and connect with the world.
               </p>
             </div>
 
@@ -71,9 +69,7 @@ export default function MissionVisionSection() {
               </div>
               
               <p className="text-sm font-medium leading-relaxed text-neutral-600">
-                To become the world's most trusted partner in bilingualism and global
-                communication, empowering learners to step into any environment with
-                confidence, empathy, and clarity.
+                To build confident communicators who can succeed in study, career, travel, business, and global life through language, soft skills, and clear expression.
               </p>
             </div>
 
