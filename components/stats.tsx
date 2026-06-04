@@ -98,8 +98,8 @@ export default function StatsSection() {
     {
       value: 8,
       suffix: "+",
-      label: "Languages Offered",
-      description: "From Spanish and Mandarin to Arabic foundations.",
+      label: "Languages",
+      description: "Learn English, Indian languages, and foreign languages for career, travel, study, business, and global opportunities.",
       icon: (
         <span className="material-symbols-outlined text-[22px] select-none">
           translate
@@ -109,8 +109,8 @@ export default function StatsSection() {
     {
       value: 12,
       suffix: "+",
-      label: "Programs",
-      description: "Certificate tracks, test prep, and summer courses.",
+      label: "Skill Programs",
+      description: "Explore Spoken English, IELTS, PTE, TOEFL, CELPIP, Duolingo, soft skills, neat handwriting, decorative calligraphy, and more.",
       icon: (
         <span className="material-symbols-outlined text-[22px] select-none">
           school
@@ -118,10 +118,10 @@ export default function StatsSection() {
       ),
     },
     {
-      value: 2000,
+      value: 10000,
       suffix: "+",
-      label: "Active Learners",
-      description: "Students, professionals, and language enthusiasts.",
+      label: "Learners Trained",
+      description: "Trusted by students, professionals, homemakers, children, job seekers, travelers, and language lovers.",
       icon: (
         <span className="material-symbols-outlined text-[22px] select-none">
           groups
@@ -131,8 +131,8 @@ export default function StatsSection() {
     {
       value: 98,
       suffix: "%",
-      label: "Satisfaction Rate",
-      description: "Based on our course surveys and career transitions.",
+      label: "Learner Satisfaction",
+      description: "Loved for simple teaching, flexible learning, personal attention, practical training, and visible progress.",
       icon: (
         <span className="material-symbols-outlined text-[22px] select-none">
           verified
@@ -143,7 +143,7 @@ export default function StatsSection() {
 
   return (
     <section className="relative z-10 -mt-10 w-full md:-mt-16">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Stats Bar Container */}
         <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
           <div className="grid grid-cols-1 divide-y divide-neutral-200 md:grid-cols-4 md:divide-y-0 md:divide-x">
