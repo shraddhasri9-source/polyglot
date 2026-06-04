@@ -3,36 +3,40 @@
 export default function EcosystemSection() {
   const ecosystemItems = [
     {
-      title: "Digital Portal",
+      title: "Language Learning Hub",
       description:
-        "Access our proprietary LMS platform featuring interactive speaking exercises, customized grammar drills, and progress tracking dashboards.",
-      icon: "devices",
+        "Learn Indian and foreign languages through simple, practical, and purpose-based training. Our courses help you speak confidently for study, career, travel, immigration, business, and everyday communication.",
+      icon: "translate",
       color: "text-blue-200 bg-white/10 border-white/10",
       hoverBg: "hover:bg-white/15 hover:border-white/25",
+      cta: "Explore Languages",
     },
     {
-      title: "Speaking Clubs & Cafés",
+      title: "Communication & Soft Skills Studio",
       description:
-        "Participate in host-guided debate circles, local coffee meetups, and language exchanges with native speakers in an informal setting.",
+        "Improve spoken English, fluency, pronunciation, grammar, vocabulary, interview skills, presentation skills, and workplace communication. Designed for students, professionals, homemakers, job seekers, and anyone who wants to speak with confidence.",
       icon: "forum",
       color: "text-emerald-200 bg-white/10 border-white/10",
       hoverBg: "hover:bg-white/15 hover:border-white/25",
+      cta: "Build your career with Confidence",
     },
     {
-      title: "Global Partner Network",
+      title: "Global Exam Preparation Centre",
       description:
-        "Unlock opportunities for academic credit, semester-abroad tracks, and certificate options with our linked partner institutions worldwide.",
-      icon: "flight_takeoff",
+        "Prepare for IELTS, PTE, TOEFL, CELPIP, and Duolingo with focused coaching, practice tests, speaking correction, writing guidance, and score-oriented strategies. Perfect for learners planning study abroad, immigration, global careers, or international opportunities.",
+      icon: "school",
       color: "text-amber-200 bg-white/10 border-white/10",
       hoverBg: "hover:bg-white/15 hover:border-white/25",
+      cta: "Start Test Prep",
     },
     {
-      title: "Career Placement Labs",
+      title: "Handwriting & Creative Writing Academy",
       description:
-        "Excel in global markets with resume review workshops, corporate interview preparation, and specialized business terminology courses.",
-      icon: "work",
+        "Develop neat, beautiful, and impressive handwriting through Cursive, Print, Lucida, Calligraphy, and decorative writing courses. Helpful for children, students, teachers, professionals, and creative learners.",
+      icon: "history_edu",
       color: "text-indigo-200 bg-white/10 border-white/10",
       hoverBg: "hover:bg-white/15 hover:border-white/25",
+      cta: "Improve Handwriting",
     },
   ];
 
@@ -48,15 +52,13 @@ export default function EcosystemSection() {
         {/* Section Header */}
         <div className="max-w-3xl mb-8 md:mb-10">
           <span className="text-xs font-medium uppercase tracking-wider text-amber-300">
-            Interconnected Learning
+            Our Learning Wings
           </span>
           <h2 className="mt-2 text-2xl font-medium text-white">
             The Polyglot Ecosystem
           </h2>
           <p className="mt-3 text-lg text-white/80 font-medium">
-            Education extends far beyond the classroom. Our ecosystem integrates
-            digital tools, student gatherings, and global academic linkages to
-            fully surround you with language.
+            Four specialized wings designed to help you build language fluency, professional communication, global exam readiness, and creative handwriting skills.
           </p>
         </div>
 
@@ -90,7 +92,7 @@ export default function EcosystemSection() {
 
               {/* Action Link */}
               <div className="mt-6 flex items-center gap-1 text-xs font-medium text-white/80 group-hover:text-amber-300 cursor-pointer transition-colors duration-200">
-                <span>Learn more</span>
+                <span>{item.cta}</span>
                 <span className="material-symbols-outlined text-[14px] translate-y-[0.5px] transition-transform duration-300 group-hover:translate-x-1">
                   arrow_forward
                 </span>
