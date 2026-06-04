@@ -30,17 +30,15 @@ export default function Hero() {
       <div className="relative mx-auto flex min-h-[62vh] max-w-7xl flex-col items-start justify-center px-4 py-10 sm:min-h-[68vh] sm:px-6 sm:py-12 lg:px-8 lg:py-14">
         <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left">
           <p className="text-sm font-medium tracking-wide text-[#FBBB6B]">
-            The Polyglot Academy
+            Polyglot Academy
           </p>
 
           <h1 className="text-2xl font-medium leading-tight text-white sm:text-3xl lg:text-4xl lg:leading-[1.2]">
-            Learn language, communication, and confidence in one place.
+            Speak Better. Communicate Smarter. Score Higher. Write Beautifully.
           </h1>
 
           <p className="text-base font-medium leading-relaxed text-white/85">
-            Build confidence in spoken English, IELTS preparation, foreign
-            languages, and career communication through structured modern
-            learning experiences.
+            A complete academy for language learning, career-focused communication, soft skills, international exam preparation, and handwriting excellence — helping learners speak with confidence, present themselves professionally, and grow globally.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-1">
