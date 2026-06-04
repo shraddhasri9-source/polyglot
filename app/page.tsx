@@ -1,7 +1,6 @@
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
-import TopBanner from "@/components/topbanner";
 import StatsSection from "@/components/stats";
 import MissionVisionSection from "@/components/mission-vision";
 import EcosystemSection from "@/components/ecosystem";
@@ -16,7 +15,6 @@ import Chatbot from "@/components/chatbot";
 export default function Home() {
   return (
     <div className="flex min-h-full flex-1 flex-col bg-neutral-50 font-sans text-black">
-      <TopBanner />
       <Navbar />
       <Hero />
       <StatsSection />

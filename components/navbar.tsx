@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,10 +18,9 @@ const navUnderline =
 
 const linkClassName = `relative inline-flex items-center px-3 py-2 text-sm font-medium text-neutral-600 transition-colors hover:bg-neutral-100 hover:text-black ${navUnderline}`;
 
-const mobileLinkClassName =
-  "block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-black";
-
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
       className="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white"
@@ -33,6 +36,7 @@ export default function Navbar() {
         </Link>
 
         <div className="ml-auto flex items-center gap-2 sm:gap-4">
+          {/* Desktop Navigation Links */}
           <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -43,37 +47,58 @@ export default function Navbar() {
             ))}
           </ul>
 
+          {/* Enquire Now button (visible on desktop/tablet, hidden on small mobile) */}
           <Link
             href="#consultation-cta"
-            className="rounded-md border border-[#0931A7] bg-[#0931A7] px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[#072889] hover:bg-[#072889]"
+            className="hidden sm:inline-flex rounded-md border border-[#0931A7] bg-[#0931A7] px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[#072889] hover:bg-[#072889]"
           >
             Enquire Now
           </Link>
 
-          <details className="relative lg:hidden">
-            <summary className="list-none cursor-pointer rounded-md border border-neutral-300 px-3 py-2 text-sm font-medium text-black marker:content-none [&::-webkit-details-marker]:hidden">
-              Menu
-            </summary>
-            <ul className="absolute right-0 z-50 mt-2 max-h-[70vh] min-w-52 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-sm">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className={mobileLinkClassName}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-              <li className="border-t border-neutral-100">
-                <Link
-                  href="#consultation-cta"
-                  className="block px-4 py-2 text-sm font-medium text-[#0931A7] hover:bg-neutral-50"
-                >
-                  Enquire Now
-                </Link>
-              </li>
-            </ul>
-          </details>
+          {/* Hamburger Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="inline-flex items-center justify-center rounded-md p-2 text-neutral-600 hover:bg-neutral-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-[#0931A7] lg:hidden"
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu"
+          >
+            {isOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu Panel */}
+      {isOpen && (
+        <div
+          id="mobile-menu"
+          className="absolute left-0 right-0 top-full z-30 border-b border-neutral-200 bg-white px-4 py-3 shadow-lg lg:hidden"
+        >
+          <ul className="flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block rounded-md px-4 py-2 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-black transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            {/* Show Enquire Now button in mobile menu only on mobile viewport (< sm) */}
+            <li className="mt-2 border-t border-neutral-100 pt-2 sm:hidden">
+              <Link
+                href="#consultation-cta"
+                onClick={() => setIsOpen(false)}
+                className="block w-full rounded-md bg-[#0931A7] px-4 py-2 text-center text-base font-medium text-white transition-colors hover:bg-[#072889]"
+              >
+                Enquire Now
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
