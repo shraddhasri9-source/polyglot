@@ -105,6 +105,7 @@ const legalLinks = [
   { label: "Privacy policy", href: "#" },
   { label: "Terms and conditions", href: "#" },
   { label: "Refund policy", href: "#" },
+  { label: "Sitemap", href: "/sitemap.xml" },
 ];
 
 function FooterLinkColumn({
@@ -166,7 +167,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-5 text-[11px] text-neutral-500">
-              © 2025 Polyglot Academy. All rights reserved
+              © {new Date().getFullYear()} Polyglot Academy. All rights reserved
             </p>
             <p className="mt-1 text-[11px] text-neutral-500">
               Built and Maintained by{" "}
