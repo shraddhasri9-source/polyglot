@@ -1,18 +1,23 @@
 "use client"
 
 import { Pricing } from "@/components/ui/pricing-table"
+import { useEnquiry } from "@/components/providers/enquiry-provider"
 
 export default function PricingDemo() {
+  const { openModal } = useEnquiry();
+
   return (
     <Pricing
       className="bg-[#62dcdb]/10 border-b border-neutral-200"
       title="Course Curriculums"
       subtitle="Explore the subjects, languages, and writing styles covered across our academic branches."
+      onFooterButtonClick={() => openModal()}
       tiers={[
         {
           name: "Spoken English & Skills",
           description: "Practical English training for students, job seekers, employees, and homemakers — from spelling and reading to confident speaking, accent clarity, public speaking, and vocabulary growth.",
           buttonText: "Enquire Now",
+          onClick: () => openModal("Spoken English & Skills"),
           features: [
             { text: "Spoken English Fluency" },
             { text: "Foundation Reading & Spelling" },
@@ -28,6 +33,7 @@ export default function PricingDemo() {
           description: "Build confidence and score higher in global English exams, and master a wide range of Indian and Foreign languages.",
           buttonText: "Enquire Now",
           isPrimary: true,
+          onClick: () => openModal("IELTS & Languages"),
           features: [
             { text: "IELTS, TOEFL, PTE, CELPIP, Duolingo" },
             { text: "French, German, Spanish, Italian" },
@@ -42,6 +48,7 @@ export default function PricingDemo() {
           name: "Handwriting Classes",
           description: "Handwriting & creative Handwriting skills handwriting courses through cursive..... for all ages",
           buttonText: "Enquire Now",
+          onClick: () => openModal("Handwriting Classes"),
           features: [
             { text: "Cursive Handwriting" },
             { text: "Print Writing & Lucida" },
@@ -57,7 +64,7 @@ export default function PricingDemo() {
       footerDescription="Not sure which level or curriculum fits your current skills? Talk to our academic advisors today."
       footerButtonText="Book a Consultation"
     />
-  )
+  );
 }
 
 

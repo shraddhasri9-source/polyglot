@@ -1,8 +1,10 @@
 "use client";
 
-import Link from "next/link";
+import { useEnquiry } from "@/components/providers/enquiry-provider";
 
 export default function ConsultationCTA() {
+  const { openModal } = useEnquiry();
+
   return (
     <section id="consultation-cta" className="w-full bg-neutral-50/50 py-8 md:py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -25,12 +27,12 @@ export default function ConsultationCTA() {
             </div>
 
             {/* CTA Button */}
-            <Link
-              href="#consultation"
-              className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-2.5 text-xs md:text-sm font-medium text-[#0931A7] shadow-sm transition-all duration-300 hover:bg-neutral-100 hover:scale-[1.02] active:scale-100 shrink-0"
+            <button
+              onClick={() => openModal()}
+              className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-2.5 text-xs md:text-sm font-medium text-[#0931A7] shadow-sm transition-all duration-300 hover:bg-neutral-100 hover:scale-[1.02] active:scale-100 shrink-0 cursor-pointer"
             >
               Book a free consultation
-            </Link>
+            </button>
           </div>
         </div>
       </div>

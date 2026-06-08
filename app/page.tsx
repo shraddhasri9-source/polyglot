@@ -11,27 +11,30 @@ import ConsultationCTA from "@/components/consultation-cta";
 import PricingDemo from "@/components/pricing-demo";
 import { FAQDemo } from "@/components/faq-demo";
 import Chatbot from "@/components/chatbot";
+import { EnquiryProvider } from "@/components/providers/enquiry-provider";
 
 export default function Home() {
   return (
-    <div className="flex min-h-full flex-1 flex-col bg-neutral-50 font-sans text-black">
-      <Navbar />
-      <Hero />
-      <StatsSection />
-      <MissionVisionSection />
-      <BrandsSection />
-      <EcosystemSection />
-      <OffersSection />
-      <TestimonialsSection />
-      <ConsultationCTA />
-      <PricingDemo />
-      <FAQDemo />
+    <EnquiryProvider>
+      <div className="flex min-h-full flex-1 flex-col bg-neutral-50 font-sans text-black">
+        <Navbar />
+        <Hero />
+        <StatsSection />
+        <MissionVisionSection />
+        <BrandsSection />
+        <EcosystemSection />
+        <OffersSection />
+        <TestimonialsSection />
+        <ConsultationCTA />
+        <PricingDemo />
+        <FAQDemo />
 
 
 
-      <Footer />
-      <Chatbot />
-    </div>
+        <Footer />
+        <Chatbot />
+      </div>
+    </EnquiryProvider>
   );
 }
 

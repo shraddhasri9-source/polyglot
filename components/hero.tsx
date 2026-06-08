@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEnquiry } from "@/components/providers/enquiry-provider";
 
 const navButtonClassName =
   "inline-flex items-center justify-center rounded-md border border-[#0931A7] bg-[#0931A7] px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[#072889] hover:bg-[#072889]";
@@ -9,6 +10,7 @@ const outlineButtonClassName =
   "inline-flex items-center justify-center rounded-md border border-[#0931A7] bg-white px-4 py-2 text-sm font-medium text-[#0931A7] transition-colors hover:bg-neutral-50";
 
 export default function Hero() {
+  const { openModal } = useEnquiry();
 
   return (
     <section
@@ -31,10 +33,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-1 pointer-events-auto">
-            <Link href="#consultation" className={navButtonClassName}>
+            <button onClick={() => openModal()} className={navButtonClassName + " cursor-pointer"}>
               Book a free consultation
-            </Link>
-            <Link href="#programs" className={outlineButtonClassName}>
+            </button>
+            <Link href="#offers" className={outlineButtonClassName}>
               Explore programs
             </Link>
           </div>

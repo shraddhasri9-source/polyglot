@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useEnquiry } from "@/components/providers/enquiry-provider";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -20,6 +21,7 @@ const linkClassName = `relative inline-flex items-center px-3 py-2 text-sm font-
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { openModal } = useEnquiry();
 
   return (
     <nav
@@ -48,12 +50,12 @@ export default function Navbar() {
           </ul>
 
           {/* Enquire Now button (visible on desktop/tablet, hidden on small mobile) */}
-          <Link
-            href="#consultation-cta"
-            className="hidden sm:inline-flex rounded-md border border-[#0931A7] bg-[#0931A7] px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[#072889] hover:bg-[#072889]"
+          <button
+            onClick={() => openModal()}
+            className="hidden sm:inline-flex rounded-md border border-[#0931A7] bg-[#0931A7] px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[#072889] hover:bg-[#072889] cursor-pointer"
           >
             Enquire Now
-          </Link>
+          </button>
 
           {/* Hamburger Menu Button */}
           <button
@@ -88,13 +90,15 @@ export default function Navbar() {
             ))}
             {/* Show Enquire Now button in mobile menu only on mobile viewport (< sm) */}
             <li className="mt-2 border-t border-neutral-100 pt-2 sm:hidden">
-              <Link
-                href="#consultation-cta"
-                onClick={() => setIsOpen(false)}
-                className="block w-full rounded-md bg-[#0931A7] px-4 py-2 text-center text-base font-medium text-white transition-colors hover:bg-[#072889]"
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  openModal();
+                }}
+                className="block w-full rounded-md bg-[#0931A7] px-4 py-2 text-center text-base font-medium text-white transition-colors hover:bg-[#072889] cursor-pointer"
               >
                 Enquire Now
-              </Link>
+              </button>
             </li>
           </ul>
         </div>

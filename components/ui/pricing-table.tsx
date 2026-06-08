@@ -28,6 +28,7 @@ export interface PricingTier {
   creditOptions?: string[]
   defaultCredits?: string
   featuresTitle?: string
+  onClick?: () => void
 }
 
 export interface PricingProps {
@@ -38,6 +39,7 @@ export interface PricingProps {
   footerTitle?: string
   footerDescription?: string
   footerButtonText?: string
+  onFooterButtonClick?: () => void;
   className?: string
 }
 
@@ -49,6 +51,7 @@ export function Pricing({
   footerTitle,
   footerDescription,
   footerButtonText,
+  onFooterButtonClick,
   className,
 }: PricingProps) {
   const [annualBilling, setAnnualBilling] = useState<Record<string, boolean>>({})
@@ -124,8 +127,9 @@ export function Pricing({
 
               {/* CTA Button */}
               <Button
+                onClick={() => tier.onClick?.()}
                 className={cn(
-                  "w-full mb-6",
+                  "w-full mb-6 cursor-pointer",
                   tier.isPrimary
                     ? "bg-[#0931A7] hover:bg-[#072889] text-white font-medium"
                     : "bg-secondary hover:bg-secondary/80 text-secondary-foreground border border-neutral-200",
@@ -193,8 +197,9 @@ export function Pricing({
             </div>
             {footerButtonText && (
               <Button
+                onClick={onFooterButtonClick}
                 variant="outline"
-                className="bg-transparent border-neutral-200 text-foreground hover:bg-accent hover:text-accent-foreground whitespace-nowrap"
+                className="bg-transparent border-neutral-200 text-foreground hover:bg-accent hover:text-accent-foreground whitespace-nowrap cursor-pointer"
               >
                 {footerButtonText}
               </Button>

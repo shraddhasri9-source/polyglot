@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEnquiry } from "@/components/providers/enquiry-provider";
 
 interface OfferCard {
   title: string;
@@ -11,6 +12,7 @@ interface OfferCard {
 }
 
 export default function OffersSection() {
+  const { openModal } = useEnquiry();
   const offers: OfferCard[] = [
     {
       title: "Spoken English",
@@ -80,6 +82,7 @@ export default function OffersSection() {
                   ) : (
                     offer.svgIcon
                   )}
+
                 </div>
 
                 {/* Offer details */}
@@ -98,12 +101,12 @@ export default function OffersSection() {
 
               {/* Action Button */}
               <div className="mt-4">
-                <Link
-                  href="#consultation"
-                  className="inline-flex w-full items-center justify-center rounded-xl bg-[#0931A7] px-4 py-2.5 text-xs font-medium text-white shadow-xs transition-colors hover:bg-[#072889]"
+                <button
+                  onClick={() => openModal(offer.title)}
+                  className="inline-flex w-full items-center justify-center rounded-xl bg-[#0931A7] px-4 py-2.5 text-xs font-medium text-white shadow-xs transition-colors hover:bg-[#072889] cursor-pointer"
                 >
                   Enquire Course
-                </Link>
+                </button>
               </div>
             </div>
           ))}
