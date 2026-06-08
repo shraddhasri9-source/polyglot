@@ -15,19 +15,29 @@ export default function OffersSection() {
     {
       title: "Spoken English",
       provider: "Shraddha Spoken English Institute",
-      description: "Master fluent communication, accent training, public speaking confidence, and vocabulary development with native-speaker café sessions.",
+      description: "Practical English training for students, job seekers, employees, and homemakers — from spelling and reading to confident speaking, accent clarity, public speaking, and vocabulary growth.",
       imageSrc: "https://ik.imagekit.io/dypkhqxip/Ideological%20difference-cuate.svg"
     },
     {
-      title: "IELTS Preparation",
+      title: "IELTS & Global Exams",
       provider: "The FLI",
-      description: "Excel in all four sections of the IELTS academic and general exams with verified mock tests, essay reviews, and direct expert training.",
+      description: "Build confidence and score higher in global English exams with expert training for IELTS, TOEFL, PTE, CELPIP, and Duolingo.",
       imageSrc: "https://ik.imagekit.io/dypkhqxip/Study%20abroad-pana.svg"
+    },
+    {
+      title: "Indian & Foreign Languages",
+      provider: "Polyglot Academy",
+      description: "Comprehensive training in Indian and foreign languages: Hindi, Telugu, Tamil, Kannada, Malayalam, Urdu, Bengali, French, German, Spanish, Mandarin, Italian, Japanese, and Arabic.",
+      svgIcon: (
+        <span className="material-symbols-outlined text-[72px] text-[#0931A7] select-none leading-none">
+          translate
+        </span>
+      )
     },
     {
       title: "Handwriting Improvement",
       provider: "Shraddha Handwriting",
-      description: "Enhance script neatness, calligraphy styling, pen stroke accuracy, and writing speed under targeted guidance for all age groups.",
+      description: "Handwriting & creative Handwriting skills handwriting courses through cursive..... for all ages",
       imageSrc: "https://ik.imagekit.io/dypkhqxip/Hand%20holding%20pen-amico.svg"
     }
   ];
@@ -51,21 +61,21 @@ export default function OffersSection() {
           </h2>
         </div>
 
-        {/* 3 Course Offerings Grid */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {/* 4 Course Offerings Grid (One single line on desktop, stacks vertically on mobile so cards are not cut off) */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
           {offers.map((offer, idx) => (
             <div
               key={idx}
-              className="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-6 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-5 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-md w-full"
             >
               <div>
-                {/* Illustration Box */}
-                <div className="relative mb-5 flex h-44 w-full items-center justify-center rounded-xl bg-neutral-50/50 p-2 overflow-hidden border border-neutral-100">
+                {/* Illustration Box (reduced height to h-32) */}
+                <div className="relative mb-4 flex h-32 w-full items-center justify-center rounded-xl bg-neutral-50/50 p-2 overflow-hidden border border-neutral-100">
                   {offer.imageSrc ? (
                     <img
                       src={offer.imageSrc}
                       alt={offer.title}
-                      className="h-full w-auto max-h-40 object-contain transition-transform duration-300 group-hover:scale-105"
+                      className="h-full w-auto max-h-28 object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   ) : (
                     offer.svgIcon
@@ -87,7 +97,7 @@ export default function OffersSection() {
               </div>
 
               {/* Action Button */}
-              <div className="mt-6">
+              <div className="mt-4">
                 <Link
                   href="#consultation"
                   className="inline-flex w-full items-center justify-center rounded-xl bg-[#0931A7] px-4 py-2.5 text-xs font-medium text-white shadow-xs transition-colors hover:bg-[#072889]"

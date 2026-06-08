@@ -184,15 +184,33 @@ export default function Footer() {
 
             <div className="mt-6">
               <p className="text-[13px] font-medium text-white">Contact us</p>
-              <ul className="mt-2 space-y-1 text-[12px] text-neutral-400">
-                <li>+91 98765 43210</li>
-                <li>WhatsApp: +91 98765 43210</li>
+              <ul className="mt-2 space-y-1.5 text-[12px] text-neutral-400">
+                <li>
+                  <a href="tel:+918143444110" className="transition-colors hover:text-white">
+                    +91 81434 44110
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+919490937410" className="transition-colors hover:text-white">
+                    +91 94909 37410
+                  </a>
+                </li>
                 <li>
                   <a
-                    href="mailto:admissions@polyglot.academy"
+                    href="https://wa.me/918143444110"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="transition-colors hover:text-white"
                   >
-                    admissions@polyglot.academy
+                    WhatsApp: +91 81434 44110
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:shraddhasri9@gmail.com"
+                    className="transition-colors hover:text-white"
+                  >
+                    shraddhasri9@gmail.com
                   </a>
                 </li>
               </ul>
