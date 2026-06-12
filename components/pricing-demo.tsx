@@ -10,14 +10,14 @@ export default function PricingDemo() {
     <Pricing
       className="bg-[#62dcdb]/10 border-b border-neutral-200"
       title="Course Curriculums"
-      subtitle="Explore the subjects, languages, and writing styles covered across our academic branches."
+      subtitle="One Destination for English Certification Exams, Global Languages, Soft Skills, and Handwriting Excellence. Covered across our academic branches."
       onFooterButtonClick={() => openModal()}
       tiers={[
         {
-          name: "Spoken English & Skills",
+          name: "Spoken English & Soft Skills",
           description: "Practical English training for students, job seekers, employees, and homemakers — from spelling and reading to confident speaking, accent clarity, public speaking, and vocabulary growth.",
           buttonText: "Enquire Now",
-          onClick: () => openModal("Spoken English & Skills"),
+          onClick: () => openModal("Spoken English & Soft Skills"),
           features: [
             { text: "Spoken English Fluency" },
             { text: "Foundation Reading & Spelling" },

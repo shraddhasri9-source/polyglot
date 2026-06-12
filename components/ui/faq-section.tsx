@@ -14,35 +14,43 @@ import Link from "next/link";
 const faqItems = [
   {
     question: "What language programs do you offer?",
-    answer: "We offer specialized courses in Spoken English (via Shraddha Spoken English Institute), IELTS Preparation (via The FLI), and Handwriting Improvement (via Shraddha Handwriting), along with structured tracks in Spanish, Mandarin, French, Japanese, German, and Arabic."
+    answer: "We offer Spoken English, Indian languages, foreign languages, IELTS/PTE/TOEFL/Duolingo/CELPIP preparation, soft skills, handwriting and calligraphy programs."
+  },
+  {
+    question: "How do I know which Spoken English course is right for me?",
+    answer: "We check your present English level and suggest the right course, from basic spelling and reading to advanced speaking and communication."
+  },
+  {
+    question: "How do you correct messy handwriting in children?",
+    answer: "We improve handwriting step by step through proper letter formation, spacing, line control, pencil grip, writing posture and regular practice sheets."
+  },
+  {
+    question: "Can I join IELTS if I am from Telugu medium and weak in English?",
+    answer: "Yes. We build your basic English foundation first, then train you for IELTS Listening, Reading, Writing and Speaking step by step."
+  },
+  {
+    question: "What soft skills do you teach in the course?",
+    answer: "We teach confidence building, communication skills, public speaking, interview skills, presentation skills, workplace behaviour and personality development."
+  },
+  {
+    question: "Do you offer French coaching for TEF/TCF and Canada immigration goals?",
+    answer: "Yes. We provide French training for beginners and advanced learners, including TEF/TCF preparation for Canada immigration and global opportunities."
+  },
+  {
+    question: "Do you offer Spoken Hindi for relocation and daily communication?",
+    answer: "Yes. We teach practical Spoken Hindi for daily life, work, travel, relocation and smooth communication in Hindi-speaking places."
   },
   {
     question: "Are classes conducted online or on-campus?",
-    answer: "We support multiple learning paths, including standard on-campus lectures, interactive hybrid courses, and flexible online sessions designed to accommodate student and professional schedules."
-  },
-  {
-    question: "How do I determine which level or course is right for me?",
-    answer: "We offer a free initial consultation and placement assessment with our advisors. During this session, we evaluate your current fluency level and recommend a tailored path to achieve your specific goals."
-  },
-  {
-    question: "What is the duration of the courses?",
-    answer: "Our standard courses run on a semester-length schedule (typically 3 to 4 months). We also run intensive summer institutes, quick weekend labs, and custom bootcamps for business professionals."
+    answer: "Yes. We provide online, offline and flexible learning options based on the course and learner’s requirement."
   },
   {
     question: "Who are the instructors at Polyglot Academy?",
-    answer: "Our faculty consists of certified language professors, industry communication specialists, and native speakers who bring real-world fluency and classroom rigor together."
-  },
-  {
-    question: "Do you provide preparation for international exams?",
-    answer: "Yes! Our IELTS Preparation track at The FLI is specifically designed for high-band scores (Academic and General) and includes weekly mock testing, structured writing evaluation, and 1-on-1 interview practice."
-  },
-  {
-    question: "Do you offer group or family discounts?",
-    answer: "Yes, we support learning together! We offer up to a 25% discount for family package sign-ups or group enrollments of three or more students."
+    answer: "Our courses are handled by experienced trainers who guide learners with practical teaching, personal attention and goal-based training."
   },
   {
     question: "How do I get started?",
-    answer: "Simply click 'Book a free consultation' or scroll to our Admissions Enquiry form, share your goals, and a counselor will get back to you within one business day."
+    answer: "You can contact us for counselling or a demo session. We will understand your goal and suggest the most suitable course plan."
   }
 ];
 

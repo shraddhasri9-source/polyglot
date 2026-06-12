@@ -20,16 +20,18 @@ export default function Hero() {
 
       <div className="relative mx-auto flex min-h-[55vh] max-w-7xl flex-col items-start justify-center px-4 py-8 sm:min-h-[60vh] sm:px-6 sm:py-10 lg:px-8 lg:py-12 z-10 pointer-events-none">
         <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left">
-          <p className="text-sm font-semibold tracking-wide text-[#0931A7]">
-            Shraddha Spoken English, THEFLI & Polyglot Academy
+          <p className="text-sm font-bold tracking-wide text-[#0931A7]">
+            Your Complete Academy for -
           </p>
 
-          <h1 className="text-2xl font-bold leading-tight text-neutral-900 sm:text-3xl lg:text-4xl lg:leading-[1.2]">
-            Master Spoken English, IELTS Prep, Handwriting, & Foreign Languages.
+          <h1 className="text-xl font-bold leading-tight text-neutral-900 sm:text-2xl lg:text-3xl lg:leading-[1.2]">
+            Confident English, IELTS Success,<br />
+            Indian & Foreign Languages,<br />
+            Personality Skills & Beautiful Handwriting.
           </h1>
 
           <p className="text-base font-medium leading-relaxed text-neutral-700">
-            Hyderabad's trusted training hub for students and professionals. Achieve fluent spoken English, score 7.5+ in IELTS, improve penmanship, and master global languages (French, Spanish, German, Telugu, and Hindi) with certified trainers.
+            Hyderabad's trusted training hub for students and professionals. Achieve fluent spoken English, score 7.5+ in IELTS, master global languages (Telugu, Hindi, English, French, Spanish, and German), and improve your penmanship.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-1 pointer-events-auto">

@@ -96,7 +96,7 @@ function StatItemRow({ value, suffix, label, description, icon }: StatItem) {
 export default function StatsSection() {
   const statsList: StatItem[] = [
     {
-      value: 8,
+      value: 10,
       suffix: "+",
       label: "Languages",
       description: "Learn English, Indian languages, and foreign languages for career, travel, study, business, and global opportunities.",
