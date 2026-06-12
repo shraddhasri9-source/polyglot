@@ -19,14 +19,14 @@ export default function Hero() {
     >
 
       <div className="relative mx-auto flex min-h-[55vh] max-w-7xl flex-col items-start justify-center px-4 py-8 sm:min-h-[60vh] sm:px-6 sm:py-10 lg:px-8 lg:py-12 z-10 pointer-events-none">
-        <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left">
+        <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left pointer-events-auto">
           <p className="text-sm font-bold tracking-wide text-[#0931A7]">
             Your Complete Academy for -
           </p>
 
           <h1 className="text-xl font-bold leading-tight text-neutral-900 sm:text-2xl lg:text-3xl lg:leading-[1.2]">
-            Confident English, IELTS Success,<br />
-            Indian & Foreign Languages,<br />
+            Confident English, IELTS Success,<br className="hidden sm:inline" />{" "}
+            Indian & Foreign Languages,<br className="hidden sm:inline" />{" "}
             Personality Skills & Beautiful Handwriting.
           </h1>
 
@@ -34,11 +34,11 @@ export default function Hero() {
             Hyderabad's trusted training hub for students and professionals. Achieve fluent spoken English, score 7.5+ in IELTS, master global languages (Telugu, Hindi, English, French, Spanish, and German), and improve your penmanship.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 pt-1 pointer-events-auto">
-            <button onClick={() => openModal()} className={navButtonClassName + " cursor-pointer"}>
+          <div className="flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center gap-3 pt-1">
+            <button onClick={() => openModal()} className={navButtonClassName + " w-full sm:w-auto cursor-pointer"}>
               Book a free consultation
             </button>
-            <Link href="#offers" className={outlineButtonClassName}>
+            <Link href="#offers" className={outlineButtonClassName + " w-full sm:w-auto text-center"}>
               Explore programs
             </Link>
           </div>

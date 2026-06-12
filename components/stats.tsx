@@ -69,7 +69,7 @@ function StatItemRow({ value, suffix, label, description, icon }: StatItem) {
       ref={elementRef}
       className="group relative flex flex-col justify-center p-6 transition-colors duration-300 hover:bg-neutral-50/50 md:p-8"
     >
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-4">
         {/* Icon */}
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#0931A7]/10 text-[#0931A7] transition-transform duration-300 group-hover:scale-110">
           {icon}
@@ -142,7 +142,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="relative z-10 -mt-10 w-full md:-mt-16">
+    <section className="relative z-10 mt-6 sm:-mt-10 w-full md:-mt-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         {/* Stats Bar Container */}
         <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
