@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base font-medium leading-relaxed text-neutral-700">
-            Hyderabad's trusted training hub for students and professionals. Achieve fluent spoken English, score 7.5+ in IELTS, master global languages (Telugu, Hindi, English, French, Spanish, and German), and improve your penmanship.
+            Hyderabad's trusted training hub for students and professionals. Achieve fluent spoken English, score 7.5+ in IELTS, master global languages (Telugu, Hindi, English, French, Spanish, German and more.), and improve your penmanship.
           </p>
 
           <div className="flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center gap-3 pt-1">

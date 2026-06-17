@@ -23,6 +23,16 @@ export default function OffersSection() {
 
   const offers: OfferCard[] = [
     {
+      title: "Indian & Foreign Languages",
+      provider: "Polyglot Academy",
+      description: "Comprehensive training in Indian and foreign languages: Hindi, Telugu, Tamil, Kannada, Malayalam, Urdu, Bengali, French, German, Spanish, Mandarin, Italian, Japanese, and Arabic.",
+      svgIcon: (
+        <span className="material-symbols-outlined text-[72px] text-[#0931A7] select-none leading-none">
+          translate
+        </span>
+      )
+    },
+    {
       title: "Spoken English",
       provider: "Shraddha Spoken English Institute",
       description: "Practical English training for students, job seekers, employees, and homemakers — from spelling and reading to confident speaking, accent clarity, public speaking, and vocabulary growth.",
@@ -33,16 +43,6 @@ export default function OffersSection() {
       provider: "The FLI",
       description: "Build confidence and score higher in global English exams with expert training for IELTS, TOEFL, PTE, CELPIP, and Duolingo.",
       imageSrc: "https://ik.imagekit.io/dypkhqxip/Study%20abroad-pana.svg"
-    },
-    {
-      title: "Indian & Foreign Languages",
-      provider: "Polyglot Academy",
-      description: "Comprehensive training in Indian and foreign languages: Hindi, Telugu, Tamil, Kannada, Malayalam, Urdu, Bengali, French, German, Spanish, Mandarin, Italian, Japanese, and Arabic.",
-      svgIcon: (
-        <span className="material-symbols-outlined text-[72px] text-[#0931A7] select-none leading-none">
-          translate
-        </span>
-      )
     },
     {
       title: "Handwriting Improvement",
