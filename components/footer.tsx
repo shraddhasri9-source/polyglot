@@ -54,7 +54,7 @@ const linkGroups = [
       {
         title: "Our Brands",
         links: [
-          { label: "Spoken English Institute", href: "#offers" },
+          { label: "Shraddha Spoken English", href: "#offers" },
           { label: "The FLI (IELTS & Prep)", href: "#offers" },
           { label: "Shraddha Handwriting", href: "#offers" },
         ],
@@ -79,7 +79,6 @@ const linkGroups = [
         title: "Offerings",
         links: [
           { label: "Specialized Courses", href: "#offers" },
-          { label: "Program Pricing", href: "#pricing" },
           { label: "FAQ", href: "#faq" },
         ],
       },
