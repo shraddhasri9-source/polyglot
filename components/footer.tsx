@@ -52,10 +52,10 @@ const linkGroups = [
   {
     sections: [
       {
-        title: "Our Brands",
+        title: "Our Learning Wings",
         links: [
           { label: "Shraddha Spoken English", href: "#offers" },
-          { label: "The FLI (IELTS & Prep)", href: "#offers" },
+          { label: "The FLI (IELTS & More Prep)", href: "#offers" },
           { label: "Shraddha Handwriting", href: "#offers" },
         ],
       },
