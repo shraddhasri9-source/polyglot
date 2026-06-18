@@ -96,7 +96,7 @@ function StatItemRow({ value, suffix, label, description, icon }: StatItem) {
 export default function StatsSection() {
   const statsList: StatItem[] = [
     {
-      value: 10,
+      value: 12,
       suffix: "+",
       label: "Languages",
       description: "Learn English, Indian languages, and foreign languages for career, travel, study, business, and global opportunities.",
@@ -107,7 +107,7 @@ export default function StatsSection() {
       ),
     },
     {
-      value: 12,
+      value: 14,
       suffix: "+",
       label: "Skill Programs",
       description: "Explore Spoken English, IELTS, PTE, TOEFL, CELPIP, Duolingo, soft skills, neat handwriting, decorative calligraphy, and more.",
@@ -118,7 +118,7 @@ export default function StatsSection() {
       ),
     },
     {
-      value: 10000,
+      value: 25000,
       suffix: "+",
       label: "Learners Trained",
       description: "Trusted by students, professionals, homemakers, children, job seekers, travelers, and language lovers.",
