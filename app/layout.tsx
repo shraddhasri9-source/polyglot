@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Polyglot Academy | Best Language Learning Institute",
     description: "Accelerate your language learning journey with Polyglot Academy. We offer comprehensive, immersive courses and expert training in French, German, Spanish, Spoken English, and IELTS preparation.",
-    url: "https://polyglotacademy.in",
+    url: "https://www.thepolyglot.co.in",
     siteName: "Polyglot Academy",
     locale: "en_US",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://polyglotacademy.in",
+    canonical: "https://www.thepolyglot.co.in",
   },
 };
 
