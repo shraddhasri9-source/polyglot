@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Handwriting classes",
     "Language academy"
   ],
-  authors: [{ name: "Polyglot Academy", url: "https://polyglotacademy.in" }],
+  authors: [{ name: "Polyglot Academy", url: "https://www.thepolyglot.co.in" }],
   creator: "Polyglot Academy",
   publisher: "Polyglot Academy",
   icons: {
